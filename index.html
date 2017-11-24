@@ -15,7 +15,8 @@
 
 <body>
 
-<div class="content-padded">
+<div class="content-padded" id="content">
+
     <!--校园送货标题title-->
     <div class="weui-flex">
         <div class="weui-flex__item">
@@ -25,23 +26,22 @@
     <!--校园送货标题-ENDtitle-->
 
     <div class="weui-flex">
-        <div class="weui-flex__item from">
-
-            <div class="weui-cells__title fromReminder">以下带有<i class="fa fa-star" aria-hidden="true"></i>的内容必须全部填写</div>
-            <div class="weui-cells weui-cells_form">
+        <div class="weui-flex__item " id="from">
+            <!--<div class="weui-cells__title fromReminder">以下带有<i class="fa fa-star" aria-hidden="true"></i>的内容必须全部填写</div>-->
+            <div class="weui-cells weui-cells_form" style="margin-top: 0px">
                 <!--收件人姓名-->
                 <div class="weui-cell ">
-                    <div class="weui-cell__hd"><label for="" class="weui-label">收件人姓名</label></div>
+                    <div class="weui-cell__hd hint"><i class="fa fa-user-o fa-lg" aria-hidden="true"></i></div>
                     <div class="weui-cell__bd">
-                        <input class="weui-input" type="text" value="" placeholder="请输入姓名">
+                        <input class="weui-input" type="text" value="" placeholder="请输入收件人姓名">
                     </div>
                 </div>
 
                 <!--收件人手机-->
                 <div class="weui-cell weui-cell_vcode receiverPhone">
-                    <div class="weui-cell__hd"><label class="weui-label">收件人手机</label></div>
+                    <div class="weui-cell__hd hint"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></div>
                     <div class="weui-cell__bd">
-                        <input class="weui-input" type="tel" placeholder="请输入手机号">
+                        <input class="weui-input" type="tel" placeholder="请输入收件人手机号">
                     </div>
                     <!--<div class="weui-cell__ft">-->
                     <!--<button class="weui-vcode-btn verify">获取验证码</button>-->
@@ -50,16 +50,16 @@
 
                 <!--联系人电话-->
                 <div class="weui-cell">
-                    <div class="weui-cell__hd"><label for="" class="weui-label">联系人电话</label></div>
+                    <div class="weui-cell__hd hint"><i class="fa fa-phone-square fa-lg" aria-hidden="true"></i></div>
                     <div class="weui-cell__bd">
-                        <input class="weui-input" type="tel" value="" placeholder="请输入联系人电话">
+                        <input class="weui-input" type="tel" value="" placeholder="请输入联系人电话(选填)">
                     </div>
                 </div>
 
                 <!--时间选择-->
-                <div class=" putTimeTitle weui-cells__title ">送货时间</div>
-                <div class="weui-flex weui-cells weui-cells_radio putTimeChoice">
-                    <div class="weui-flex__item">
+                <div class="weui-cells__title colors "><i class="fa fa-truck fa-lg" aria-hidden="true"></i> 送货时间</div>
+                <div class="weui-flex weui-cells weui-cells_radio putTimeChoice ">
+                    <div class="weui-flex__item kaojin">
                         <label class="weui-cell weui-check__label" for="x11">
                             <div class="weui-cell__bd">
                                 <p>今天中午</p>
@@ -70,7 +70,7 @@
                             </div>
                         </label>
                     </div>
-                    <div class="weui-flex__item">
+                    <div class="weui-flex__item kaojin">
                         <!--<div class="placeholder"></div>-->
                         <label class="weui-cell weui-check__label" for="x12">
                             <div class="weui-cell__bd">
@@ -82,7 +82,7 @@
                             </div>
                         </label>
                     </div>
-                    <div class="weui-flex__item">
+                    <div class="weui-flex__item kaojin">
                         <label class="weui-cell weui-check__label" for="x13">
                             <div class="weui-cell__bd">
                                 <p>明天中午</p>
@@ -93,7 +93,7 @@
                             </div>
                         </label>
                     </div>
-                    <div class="weui-flex__item">
+                    <div class="weui-flex__item kaojin">
                         <label class="weui-cell weui-check__label" for="x14">
                             <div class="weui-cell__bd">
                                 <p>明天晚上</p>
@@ -108,28 +108,69 @@
                 <!--时间选择-END-->
 
                 <!--取件短信-->
-                <div class="weui-cells__title">收到的取件短信</div>
+                <div class="weui-cells__title colors"><i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i> 取件短信</div>
                 <div class="weui-cells weui-cells_form">
                     <div class="weui-cell">
                         <div class="weui-cell__bd">
-                            <textarea class="weui-textarea  message" placeholder="请粘贴取件短信" rows="3"></textarea>
+                            <textarea class="weui-textarea message" placeholder="请粘贴取件短信" rows="3"></textarea>
                             <!--<div class="weui-textarea-counter"><span>0</span>/100</div>-->
                         </div>
                     </div>
                 </div>
+                <!--取件短信END-->
+
+                <!--短信时间选择-->
+                <div class="weui-cells__title colors"style="margin-top: 0px"><i class="fa fa-comment-o fa-lg" aria-hidden="true"></i> 短信时间</div>
+                <div id="massageTime" class="weui-flex weui-cells weui-cells_radio putTimeChoice ">
+                    <div class="weui-flex__item kaojin">
+                        <label class="weui-cell weui-check__label" for="x21" >
+                            <div class="weui-cell__bd">
+                                <p>前天</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" class="" name="radio1" id="x21">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="weui-flex__item kaojin">
+                        <!--<div class="placeholder"></div>-->
+                        <label class="weui-cell weui-check__label" for="x22">
+                            <div class="weui-cell__bd">
+                                <p>昨天</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="radio1" class="" id="x22" checked="checked">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="weui-flex__item kaojin">
+                        <label class="weui-cell weui-check__label" for="x23">
+                            <div class="weui-cell__bd">
+                                <p>今天</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="radio1" class="" id="x23" checked="checked">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <!--短信时间选择-END-->
 
                 <!--备注-->
-                <div class="weui-flex beizhu">
-                    <div class="weui-flex__item remark">备注</div>
-                    <div class="weui-flex__item">
-                        <input class="weui-input" type="text" placeholder="请输入备注">
+                <div class="weui-cell ">
+                    <div class="weui-cell__hd hint"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" value="" placeholder="请输入备注(选填)">
                     </div>
                 </div>
                 <!--备注 END-->
 
                 <!--验证-->
                 <div class="weui-cell weui-cell_vcode">
-                    <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                    <div class="weui-cell__hd hint"><i class="fa fa-unlock-alt fa-lg" aria-hidden="true"></i></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" type="text" placeholder="请输入验证码">
                     </div>

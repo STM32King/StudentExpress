@@ -3,6 +3,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+/*#contend input{*/
+    /*color: #DE0000;*/
+/*}*/
+
 .demos-title {
     text-align: center;
     font-size: 34px;
@@ -62,7 +66,7 @@ footer a {
     letter-spacing:18px;
 }
 
-.from {
+#from {
     border: 1px solid darkgrey;
     margin-top: 4px;
     padding: 2px;
@@ -114,6 +118,9 @@ footer a {
     margin-left: 12px;
     color: powderblue;
     margin-right: -210px;
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
+    color: #999;
 }
 
 .beizhu{
@@ -128,5 +135,22 @@ footer a {
 }
 
 .message{
+    font-size: 17px;
     background-color: #edffed;
+}
+
+.hint{
+    width: 50px;
+}
+
+.kaojin{
+    display: inline-flex;
+}
+
+#massageTime label{
+    margin: auto;
+}
+
+.colors{
+    color: black;
 }
