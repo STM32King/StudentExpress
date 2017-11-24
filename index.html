@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description"
           content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-    <!--<link rel="stylesheet" href="css/weui.min.css">-->
-    <!--<link rel="stylesheet" href="css/jquery-weui.css">-->
-    <!--<link rel="stylesheet" href="css/mycss.css">-->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.1.2/css/jquery-weui.min.css">
@@ -41,14 +38,14 @@
                 </div>
 
                 <!--收件人手机-->
-                <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell weui-cell_vcode receiverPhone">
                     <div class="weui-cell__hd"><label class="weui-label">收件人手机</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" type="tel" placeholder="请输入手机号">
                     </div>
-                    <div class="weui-cell__ft">
-                        <button class="weui-vcode-btn verify">获取验证码</button>
-                    </div>
+                    <!--<div class="weui-cell__ft">-->
+                    <!--<button class="weui-vcode-btn verify">获取验证码</button>-->
+                    <!--</div>-->
                 </div>
 
                 <!--联系人电话-->
@@ -68,7 +65,7 @@
                                 <p>今天中午</p>
                             </div>
                             <div class="weui-cell__ft">
-                                <input type="radio" class="weui-check" name="radio1" id="x11">
+                                <input type="radio" class="" name="radio1" id="x11">
                                 <span class="weui-icon-checked"></span>
                             </div>
                         </label>
@@ -76,12 +73,11 @@
                     <div class="weui-flex__item">
                         <!--<div class="placeholder"></div>-->
                         <label class="weui-cell weui-check__label" for="x12">
-
                             <div class="weui-cell__bd">
                                 <p>今天晚上</p>
                             </div>
                             <div class="weui-cell__ft">
-                                <input type="radio" name="radio1" class="weui-check" id="x12" checked="checked">
+                                <input type="radio" name="radio1" class="" id="x12" checked="checked">
                                 <span class="weui-icon-checked"></span>
                             </div>
                         </label>
@@ -92,7 +88,7 @@
                                 <p>明天中午</p>
                             </div>
                             <div class="weui-cell__ft">
-                                <input type="radio" class="weui-check" name="radio1" id="x13">
+                                <input type="radio" class="" name="radio1" id="x13">
                                 <span class="weui-icon-checked"></span>
                             </div>
                         </label>
@@ -103,7 +99,7 @@
                                 <p>明天晚上</p>
                             </div>
                             <div class="weui-cell__ft">
-                                <input type="radio" name="radio1" class="weui-check" id="x14" checked="checked">
+                                <input type="radio" name="radio1" class="" id="x14" checked="checked">
                                 <span class="weui-icon-checked"></span>
                             </div>
                         </label>
@@ -116,31 +112,32 @@
                 <div class="weui-cells weui-cells_form">
                     <div class="weui-cell">
                         <div class="weui-cell__bd">
-                            <textarea class="weui-textarea" placeholder="请粘贴取件短信" rows="3"></textarea>
+                            <textarea class="weui-textarea  message" placeholder="请粘贴取件短信" rows="3"></textarea>
                             <!--<div class="weui-textarea-counter"><span>0</span>/100</div>-->
                         </div>
                     </div>
                 </div>
 
                 <!--备注-->
-                <div class="weui-cells__title">备注</div>
-                <div class="weui-cells">
-                    <div class="weui-cell">
-                        <div class="weui-cell__bd">
-                            <input class="weui-input" type="text" placeholder="请输入备注">
-                        </div>
+                <div class="weui-flex beizhu">
+                    <div class="weui-flex__item remark">备注</div>
+                    <div class="weui-flex__item">
+                        <input class="weui-input" type="text" placeholder="请输入备注">
                     </div>
                 </div>
+                <!--备注 END-->
 
+                <!--验证-->
                 <div class="weui-cell weui-cell_vcode">
                     <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" type="text" placeholder="请输入验证码">
                     </div>
                     <div class="weui-cell__ft">
-                        <img class="weui-vcode-img" src="picture/vcode.jpg">
+                        <img class="weui-vcode-img" src="./images/vcode.jpg">
                     </div>
                 </div>
+                <!--验证END-->
 
                 <!--按钮-->
                 <div class="weui-flex">
@@ -156,6 +153,7 @@
                     </div>
                 </div>
                 <!--按钮END-->
+
             </div>
         </div>
     </div>
@@ -174,7 +172,4 @@
     });
 </script>
 <script src="js/jquery-weui.js"></script>
-<!--&lt;!&ndash; 如果使用了某些拓展插件还需要额外的JS &ndash;&gt;-->
-<!--<script src="https://cdn.bootcss.com/jquery-weui/1.1.2/js/swiper.min.js"></script>-->
-<!--<script src="https://cdn.bootcss.com/jquery-weui/1.1.2/js/city-picker.min.js"></script>-->
 </html>
