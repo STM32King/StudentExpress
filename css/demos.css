@@ -1,0 +1,81 @@
+﻿body, html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.demos-title {
+  text-align: center;
+  font-size: 34px;
+  color: #3cc51f;
+  font-weight: 400;
+  margin: 0 15%;
+}
+
+.demos-sub-title {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.demos-header {
+  padding: 35px 0;
+}
+
+.demos-content-padded {
+  padding: 15px;
+}
+
+.demos-second-title {
+  text-align: center;
+  font-size: 24px;
+  color: #3cc51f;
+  font-weight: 400;
+  margin: 0 15%;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+.placeholder {
+  margin: 5px;
+  padding: 0 10px;
+  background-color: #0bb20c;
+  line-height: 36.8px;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  padding: 0 10px;
+  background-color: #0bb20c;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+}
+
+.from {
+    border: 1px solid darkgrey;
+    margin-top: 4px;
+    padding: 2px;
+}
+
+.content-padded {
+    padding: 15px;
+}
+
+.fromReminder{
+    text-align: right;
+    color: lightgray;
+}
+
+.putTime{
+    color: #0bb20c;
+}
+
